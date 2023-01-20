@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PassportController;
-
+use App\Http\Controllers\RelationshipManageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +23,12 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+/*
+      Relationship Lists
+*/
+
+Route::get('/relation/lists', [RelationshipManageController::class, 'lists'])->name('relation.lists');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

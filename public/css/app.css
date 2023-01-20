@@ -1,0 +1,9 @@
+#rel1{
+    display: flex;
+}
+
+#rel1 > div{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}

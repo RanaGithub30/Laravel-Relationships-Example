@@ -74,7 +74,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ route('relation.lists') }}">
                              Relationships
                         </a>
                     </li>
