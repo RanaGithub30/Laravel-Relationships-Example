@@ -44,7 +44,7 @@
     <div class="card" style="width: 18rem;">
         <div class="card-body">
             <div class="card-title"><h3>
-            <a href="#" target="_blank">Many to Many Relationship</a>
+            <a href="{{ route('many-to-many-relation') }}" target="_blank">Many to Many Relationship</a>
         </h3>
         </div>
         </div>

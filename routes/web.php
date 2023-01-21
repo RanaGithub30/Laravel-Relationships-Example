@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PassportController;
 use App\Http\Controllers\RelationshipManageController;
+use App\Http\Controllers\ManyToManyRelationshipController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +51,14 @@ Route::get('categories', [CategoryController::class, 'index'])->name('category.i
 Route::get('/passport/create', [PassportController::class, 'create'])->name('passport.create');
 Route::post('/passport/store', [PassportController::class, 'store'])->name('passport.store');
 Route::get('/passport/show', [PassportController::class, 'show'])->name('passport.show');
+
+
+/*
+    Many to Many Relationship
+*/
+
+Route::get('/many-to-many/relation', [RelationshipManageController::class, 'many_to_many'])->name('many-to-many-relation');
+
 
 // One to Many Relationship..
 

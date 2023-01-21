@@ -12,4 +12,9 @@ class RelationshipManageController extends Controller
     {
             return view('relation.lists');
     }
+
+    public function many_to_many()
+    {
+            return view('relation.many_to_many');
+    }
 }
